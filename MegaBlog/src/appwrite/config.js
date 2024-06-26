@@ -23,12 +23,13 @@ export class Service{
                 {
                     title,
                     content,
-                    featuredImage,
+                    featuredimage:featuredImage,
                     status,
-                    userId,
+                    userid:userId,
                 }
             )
         } catch (error) {
+            
             console.log("Appwrite serive :: createPost :: error", error);
         }
     }
@@ -87,8 +88,6 @@ export class Service{
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries,
-                
-
             )
         } catch (error) {
             console.log("Appwrite serive :: getPosts :: error", error);
@@ -123,7 +122,6 @@ export class Service{
             return false
         }
     }
-
     getFilePreview(fileId){
         return this.bucket.getFilePreview(
             conf.appwriteBucketId,
