@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.blog-app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50; /* Darker shade for the text */
+  text-align: center; /* Center align the text */
+  margin: 20px 0; /* Margin for spacing */
+}
